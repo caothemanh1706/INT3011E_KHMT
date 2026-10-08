@@ -1,0 +1,63 @@
+N,Encoding,Variables,Clauses,EncodingTime,SolveTime,TotalTime,Status
+8,SAT-Binomial,64,744,0.001,0.000,0.001,SAT
+8,SAT-Binary,174,728,0.001,0.000,0.001,SAT
+8,SAT-Sequential,274,604,0.001,0.000,0.001,SAT
+8,Gurobi,0,0,0.000,0.045,0.045,SAT
+8,CPLEX-CP,0,0,0.000,0.903,0.903,SAT
+8,CPLEX-MIP,0,0,0.000,0.761,0.761,SAT
+8,CP-SAT,0,0,0.000,0.651,0.651,SAT
+16,SAT-Binomial,256,6352,0.003,0.017,0.020,SAT
+16,SAT-Binary,572,3928,0.006,0.028,0.035,SAT
+16,SAT-Sequential,1186,2732,0.003,0.011,0.014,SAT
+16,Gurobi,0,0,0.000,0.036,0.036,SAT
+16,CPLEX-CP,0,0,0.000,0.763,0.763,SAT
+16,CPLEX-MIP,0,0,0.000,0.750,0.750,SAT
+16,CP-SAT,0,0,0.000,1.006,1.006,SAT
+32,SAT-Binomial,1024,52640,0.058,0.008,0.066,SAT
+32,SAT-Binary,1850,19800,0.046,0.461,0.508,SAT
+32,SAT-Sequential,4930,11596,0.008,0.034,0.041,SAT
+32,Gurobi,0,0,0.000,0.125,0.125,SAT
+32,CPLEX-CP,0,0,0.000,0.927,0.927,SAT
+32,CPLEX-MIP,0,0,0.000,0.821,0.821,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 1024 vars, 190 consts, CPLEX code=1016"
+32,CP-SAT,0,0,0.000,0.831,0.831,SAT
+64,SAT-Binomial,4096,428864,0.456,0.021,0.477,SAT
+64,SAT-Binary,6136,95576,0.177,0.162,0.339,SAT
+64,SAT-Sequential,,,,,>60s,TIMEOUT
+64,Gurobi,0,0,0.000,0.107,0.107,Error: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+64,CPLEX-CP,0,0,0.000,1.075,1.075,SAT
+64,CPLEX-MIP,0,0,0.000,1.020,1.020,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 4096 vars, 382 consts, CPLEX code=1016"
+64,CP-SAT,0,0,0.000,1.254,1.254,SAT
+100,SAT-Binomial,10000,1646900,1.853,0.017,1.870,SAT
+100,SAT-Binary,13678,269024,0.537,0.094,0.631,SAT
+100,SAT-Sequential,,,,,>60s,TIMEOUT
+100,Gurobi,0,0,0.000,0.112,0.112,Error: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+100,CPLEX-CP,0,0,0.000,0.995,0.995,SAT
+100,CPLEX-MIP,0,0,0.000,1.158,1.158,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 10000 vars, 598 consts, CPLEX code=1016"
+100,CP-SAT,0,0,0.000,2.126,2.126,SAT
+128,SAT-Binomial,16384,3462784,4.212,0.071,4.283,SAT
+128,SAT-Binary,21238,447832,0.763,0.252,1.016,SAT
+128,SAT-Sequential,,,,,>60s,TIMEOUT
+128,Gurobi,0,0,0.000,0.187,0.187,Error: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+128,CPLEX-CP,0,0,0.000,1.057,1.057,SAT
+128,CPLEX-MIP,0,0,0.000,0.870,0.870,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 16384 vars, 766 consts, CPLEX code=1016"
+128,CP-SAT,0,0,0.000,3.392,3.392,SAT
+256,SAT-Binomial,65536,27831552,35.710,0.597,36.307,SAT
+256,SAT-Binary,76788,2053464,3.339,0.326,3.666,SAT
+256,SAT-Sequential,,,,,>60s,TIMEOUT
+256,Gurobi,0,0,0.000,0.706,0.706,Error: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+256,CPLEX-CP,0,0,0.000,1.381,1.381,"Error: Solver error: Problem size limit exceeded.
+CP Optimizer Community Edition solves problems with search spaces up to 2^1000.
+Unrestricted version options (including academia) at https://ibm.biz/error1016
+"
+256,CPLEX-MIP,0,0,0.000,1.597,1.597,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 65536 vars, 1534 consts, CPLEX code=1016"
+256,CP-SAT,0,0,0.000,55.265,55.265,SAT
+512,SAT-Binomial,,,,,>60s,TIMEOUT
+512,SAT-Binary,287730,9262424,23.828,3.793,27.621,SAT
+512,SAT-Sequential,,,,,>60s,TIMEOUT
+512,Gurobi,0,0,0.000,3.905,3.905,Error: Model too large for size-limited license; visit https://gurobi.com/unrestricted for more information
+512,CPLEX-CP,0,0,0.000,1.639,1.639,"Error: Solver error: Problem size limit exceeded.
+CP Optimizer Community Edition solves problems with search spaces up to 2^1000.
+Unrestricted version options (including academia) at https://ibm.biz/error1016
+"
+512,CPLEX-MIP,0,0,0.000,3.987,3.987,"Error: **** Promotional version. Problem size limits (1000 vars, 1000 consts) exceeded, model has 262144 vars, 3070 consts, CPLEX code=1016"
+512,CP-SAT,,,,,>60s,TIMEOUT
