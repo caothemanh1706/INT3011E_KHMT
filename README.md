@@ -1,18 +1,50 @@
 # BTL1 - Các vấn đề hiện đại của Khoa học máy tính
 
-## Giới thiệu
+## 1. Giới thiệu
 
-Đây là toàn bộ mã nguồn phục vụ **Bài tập lớn số 1** của học phần **Các vấn đề hiện đại của Khoa học máy tính (INT3011E)**.
+Đây là mã nguồn phục vụ **Bài tập lớn số 1 (BTL1)** của học phần **Các vấn đề hiện đại của Khoa học máy tính (INT3011E)**.
 
-Đề tài tập trung vào việc giải bài toán **N-Queens** bằng phương pháp **SAT (Boolean Satisfiability Problem)**. Mục tiêu của chương trình là xây dựng các mô hình SAT khác nhau cho bài toán, chuyển đổi bài toán N-Queens thành công thức Boolean CNF, sau đó sử dụng bộ giải SAT để tìm nghiệm.
+Đề tài tập trung nghiên cứu và thực nghiệm giải bài toán **N-Queens** bằng phương pháp **SAT (Boolean Satisfiability Problem)**, đồng thời so sánh với một số phương pháp giải dựa trên **MIP** và **CP**.
 
-Trong dự án, bài toán được cài đặt và thực nghiệm với ba phương pháp encoding chính:
+## 2. Các phương pháp Encoding
+
+Đối với phương pháp SAT, dự án sử dụng ba encoding:
 
 - **Sequential Encoding**
 - **Binomial Encoding**
 - **Binary Encoding**
 
-Các encoding được sử dụng để biểu diễn các ràng buộc của bài toán N-Queens dưới dạng các mệnh đề logic CNF, từ đó đưa vào bộ giải SAT để tìm nghiệm.
-"# INT3011E_KHMT" 
-"# INT3011E_VDHDKHMT" 
-"# INT3011E_KHMT" 
+Các encoding chuyển bài toán N-Queens thành công thức **CNF**, sau đó sử dụng SAT Solver để tìm nghiệm.
+
+## 3. Các Solver
+
+Dự án thực nghiệm và so sánh các solver:
+
+- **PySAT / Glucose3**
+- **Gurobi**
+- **CPLEX-MIP**
+- **CPLEX-CP**
+- **OR-Tools CP-SAT**
+
+## 4. Cấu trúc mã nguồn
+
+```text
+.
+├── binary.py
+├── binomial.py
+├── sequential.py
+├── solvers.py
+├── experiment.py
+├── experiment_results_large.csv
+├── size.txt
+└── README.md
+```
+
+- `binary.py`: Binary Encoding.
+- `binomial.py`: Binomial Encoding.
+- `sequential.py`: Sequential Encoding.
+- `solvers.py`: Cài đặt các phương pháp giải gồm Gurobi, CPLEX-MIP, CPLEX-CP và OR-Tools CP-SAT.
+- `experiment.py`: Chạy các thí nghiệm và ghi nhận kết quả.
+- `experiment_results_large.csv`: Lưu kết quả thực nghiệm.
+- `size.txt`: Lưu thông tin kích thước công thức SAT.
+
